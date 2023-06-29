@@ -1,0 +1,70 @@
+*{
+	padding: 0;
+	margin: 0;
+	background-color: bisque;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+body{
+	overflow: hidden;
+}
+div{
+	background-color: rgba(211, 184, 151, 0.329);
+	border-radius: 5px;
+}
+.div1{
+grid-area: header	;
+border-left:3px solid rgba(0, 255, 255, 0.349); 
+border-bottom:3px solid rgba(0, 255, 255, 0.349);  
+}
+
+.div2{
+	grid-area: nav;
+	border-right:3px solid rgba(0, 255, 255, 0.349); 
+	border-bottom:3px solid rgba(0, 255, 255, 0.349); 
+	border-top:3px solid rgba(0, 255, 255, 0.349); 
+}
+
+.div3{
+	grid-area: article;
+	border:3px solid rgba(0, 255, 255, 0.349); 
+}
+
+.div4{
+	grid-area: aside;
+	border-left:3px solid rgba(0, 255, 255, 0.349); 
+	border-top:3px solid rgba(0, 255, 255, 0.349); 
+	border-bottom:3px solid rgba(0, 255, 255, 0.349); 
+}
+
+.div5{
+	grid-area: footer;
+	border-left:3px solid rgba(0, 255, 255, 0.349); 
+	border-top:3px solid rgba(0, 255, 255, 0.349); 
+}
+.grid{
+	display: grid;
+	grid-template-columns: 1fr 2fr 6fr 3fr;
+	grid-template-rows: 2fr 1fr 2fr 1fr;
+	grid-gap: 10px;
+	height: 98%;
+	margin:5px;
+	grid-template-areas:"nav header header header"
+											"nav article article aside"
+											"nav article article aside"
+											"footer footer footer footer";
+}
+.grid h1, p{
+	background-color: rgba(211, 184, 151, -0.671);
+}
+
+.div2 a{
+	display: block;
+	border:none;
+	background-color: rgba(211, 184, 151, -0.671);
+	text-decoration: none;
+	color: green;
+	margin:20px 0;
+}

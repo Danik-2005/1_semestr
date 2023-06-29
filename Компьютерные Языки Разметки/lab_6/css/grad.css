@@ -1,0 +1,41 @@
+div{
+	display: inline-block;
+}
+#div1{
+	background-image: linear-gradient(to bottom, blue, red);
+	width: 100px;
+	height: 100px;
+	border: 2px solid black;
+}	
+#div2{
+	background-image: repeating-linear-gradient(to top right, rgb(224, 22, 224), rgb(224, 22, 224) 6px, rgb(0, 0, 255) 6px,  rgb(0, 0, 255) 12px);
+	
+	width: 100px;
+	height: 100px;
+	border: 2px solid black;
+}
+#div3{
+	background-image: radial-gradient(yellow, green);
+	width: 100px;
+	height: 100px;
+	border: 2px solid black;
+}
+#div4{
+	background-image: repeating-radial-gradient(green, green 7px, yellow 7px,yellow 14px);
+	width: 100px;
+	height: 100px;
+	border: 2px solid black;
+}
+#div5{
+	background-image: radial-gradient(yellow, green 35px, transparent 60px),
+	linear-gradient(to bottom, blue,rgb(191, 9, 191))	;
+	width: 100px;
+	height: 100px;
+	border: 2px solid black;}
+#div6{
+	background-image: linear-gradient(to right, yellow, green 50%, transparent),
+	linear-gradient(to bottom, black, black 13px, white 50px, white 70px, blue 80px, blue 82px, rgb(240, 6, 240) 90px);
+	width: 100px;
+	height: 100px;
+	border: 2px solid black;
+}

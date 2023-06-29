@@ -1,0 +1,18 @@
+body{
+	background-color:lightgrey ;
+}
+
+#wow{
+	color: darkred;
+	text-decoration: underline ;
+	background-color: orange;
+}
+table{
+border-spacing: 0px;
+}
+tr:first-child{
+	background-color: red;
+}
+td:first-child{
+	background-color: yellow;
+}

@@ -1,0 +1,27 @@
+th,tr,td{
+	text-align: center;
+	border: 3px ridge grey;
+	color: white;
+}
+th{
+background-color: darkblue;
+}
+th{
+	font-size: 1.2em;
+}
+table{
+  empty-cells: hide;
+	border-spacing:0px;
+}
+td:nth-child(2) {
+  background-color:#00BFFF;
+}
+td:nth-child(3) {
+  background-color: purple;
+}
+td:nth-child(4) {
+  background-color: green;
+}
+td:nth-child(1) {
+	color:black;
+}

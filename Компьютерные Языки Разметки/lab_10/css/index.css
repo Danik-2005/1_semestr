@@ -1,0 +1,88 @@
+*{
+margin: 0;
+padding: 0;
+background-color: bisque;
+}
+video{
+	border-radius: 2%;
+	margin: 3px;
+}
+.container div{
+	border: 1px solid black;
+	border-radius: 2%;
+	margin:4px 10px;
+}
+.container{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: space-around;
+}
+.head{
+	text-align: center;
+	justify-self: center;
+	align-self: flex-start;
+	width: 100%;
+}
+.head span{
+	display:none ;
+}
+.div1{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	max-width: 32%;
+}
+.div2{
+	display: flex;
+	flex-grow: 1;
+	max-width: 32%;
+}
+.div2 p{
+	margin: 10px;
+}
+.div3{
+	display: flex;
+	flex-grow: 1;
+	max-width: 32%;
+	flex-direction: column;
+
+}
+.div3 audio{
+	width: 95%;
+	margin: 10px;	
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+@media screen and (max-width: 600px){
+	.container{
+		display: flex;
+		flex-direction: column;
+	}
+	.head span{
+		display: inline-block;
+		float: right;
+		margin-right: 20px;
+	}
+	.div1{
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		max-width: 100%;
+	}
+	.div2{
+		display: flex;
+		flex-grow: 1;
+		max-width: 100%;
+	}
+	.div3{
+		display: flex;
+		flex-grow: 1;
+		max-width: 100%;
+		flex-direction: column;
+	}
+}

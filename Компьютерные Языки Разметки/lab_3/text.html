@@ -1,0 +1,95 @@
+<!doctype html>   
+<html>   
+<head>   
+<charset meta="utf-8">   
+<title>text</title>
+<style>
+  @font-face{
+	font-family:"caveat";
+	src: url(fonts/Caveat.woff) format("woff");	 /*woff, svg, ttf!*/
+}
+  @font-face{
+	font-family:"exo2";
+	src: url(fonts/exo2.woff) format("woff")
+}
+  @font-face{
+	font-family:"comfortaa";
+	src: url(fonts/Comfortaa.woff) format("woff")
+}
+h1{
+	font-family: caveat; /*font-style не робит, применил font-weight*/
+	padding-left:0;
+	line-height:0%;
+	text-align: center;
+	font-weight: bold; 
+	text-transform: capitalize; /*значение uppercase/lowercase*/
+	font-size:45px;
+}
+h2{
+	font-family: exo2;
+	padding-bottom: 1.2em;
+	padding-top: 0.2rem;
+	text-indent:25px;         /*первая строка     font-variant:small caps малые прописные*/
+	text-align:left;          /*text-shadow и всякие параметры, не указ. в лабе*/
+}
+p{
+	font-family: comfortaa;
+	text-indent:25px;
+	margin-top:0%;
+	text-align:justify;
+	margin-bottom:0%;
+	line-height:200%;          /*отступ между строками*/
+	font-size:20px;
+}
+	p::first-letter{           /*first-letter. first-line. after. before содержимое до и после указан элемент*/
+	font-weight:bold;
+	font-size:45px;
+	color:white;
+	background-color:hsla(275, 100%, 10%, 1);
+}
+li{
+	color:black;
+	font-size:20px;
+	font-family: comfortaa;
+}
+li::marker{                   /*цвет маркера!*/
+	color:blue;
+}
+ul{
+	 list-style-image: url(point.png);
+}
+
+	</style>   
+
+</head>   
+<body>   
+   <h1>Это заголовок первого уровня</h1>
+   
+   <h2>Это заголовок второго уровня</h2>
+   
+   <p>Первая буква. Просто текст для показывания нескольких строк на странице и демонстрации  indent</p>
+   <p>Первая буква. Просто текст для показывания нескольких строк на странице и демонстрации  indent</p>
+   
+   <h2>Это заголовок второго уровня</h2>
+   
+   <p>Первая буква. Просто текст для показывания нескольких строк на странице и демонстрации  indent</p>
+   
+   <h2 style="padding-bottom: 0%">Это заголовок второго уровня</h2>
+   
+   <ol type="I">
+		<li>первое</li>
+		<li>второе</li>
+		<li>третье</li>
+		<li>четвёртое</li>
+		<li>пятое</li>
+   </ol>
+
+
+
+   <ul>
+    <li>Чебурашка</li>
+    <li>Крокодил Гена</li>
+    <li>Шапокляк</li>
+  </ul>
+</body>   
+</html>                           
