@@ -1,0 +1,179 @@
+nav .submit__form input[type=submit] {
+  border: 1px solid black;
+  padding: 2px 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #222222;
+  color: green;
+  border-radius: 5px;
+}
+
+div {
+  display: inline-block;
+  border: 1px solid black;
+}
+
+h2 {
+  text-align: center;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+nav {
+  grid-area: nav;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.main__grid {
+  border: none;
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-areas: "header header" "main nav" "footer footer";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr;
+}
+
+header {
+  margin: 5px 10px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  background-color: rgba(43, 43, 43, 0.5764705882);
+}
+header .logo {
+  background-image: url("../img/logo.png");
+  background-size: cover;
+  width: 70px;
+  height: 70px;
+  margin: 5px 10px;
+}
+header .page {
+  position: relative;
+  left: 620px;
+  margin: 5px 10px;
+  padding: 3px 0;
+  width: 100px;
+  text-align: center;
+}
+
+main {
+  margin: 5px 10px;
+  padding: 5px 0;
+  border: 1px solid black;
+}
+main .header {
+  display: block;
+  margin: 5px 10px;
+  width: 97%;
+}
+main .text__box {
+  margin: 5px 10px;
+  display: inline-block;
+  width: 29.9%;
+  height: 100px;
+  font-size: 20px;
+}
+main .images {
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  grid-template-rows: 200px;
+}
+main .image1 {
+  background-image: url("../img/logo.png");
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+}
+main .image2 {
+  background-image: url("../img/logo.png");
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+}
+main .image3 {
+  background-image: url("../img/logo.png");
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+}
+main .image4 {
+  background-image: url("../img/logo.png");
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+}
+
+nav {
+  border: 1px solid black;
+  margin: 5px 10px;
+  display: grid;
+  grid-template-rows: 10fr 2fr 10fr;
+}
+nav .submit__form {
+  margin: 5px 10px;
+}
+nav .submit__form input[type=text],
+nav .submit__form input[type=password] {
+  background-color: rgba(236, 203, 161, 0.707);
+  border: 1px solid black;
+  margin: 5px 10px;
+}
+nav .nav__form {
+  margin: 5px 10px;
+}
+nav .nav__header {
+  margin: 5px 10px;
+}
+nav .nav__info {
+  display: grid;
+  margin: 5px 10px;
+  grid-template-areas: "nav__image1 nav__text1" "nav__image2 nav__text2";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+}
+nav .nav__info .img1 {
+  grid-area: "nav__image1";
+  background-image: url("../img/logo.png");
+  background-size: cover;
+  width: 70px;
+  height: 70px;
+  margin: 5px 10px;
+}
+nav .nav__info .text1 {
+  grid-area: "nav__text1";
+  height: 70px;
+  margin: 5px 10px;
+}
+nav .nav__info .img2 {
+  grid-area: "nav__image2";
+  background-image: url("../img/logo.png");
+  background-size: cover;
+  width: 70px;
+  height: 70px;
+  margin: 5px 10px;
+}
+nav .nav__info .text2 {
+  height: 70px;
+  grid-area: "nav__text2";
+  margin: 5px 10px;
+}
+
+footer {
+  background-color: #222222;
+  margin: 5px 10px;
+  border: 1px solid black;
+}/*# sourceMappingURL=style.css.map */

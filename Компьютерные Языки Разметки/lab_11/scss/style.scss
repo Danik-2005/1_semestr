@@ -1,0 +1,204 @@
+@import 'values';
+@function HeadFS($HeaderFontSize) {
+	$res: 1;
+	$res: $HeaderFontSize / 2;
+	@return $res; 
+}
+@function ParagraphStyle(){
+	$res:black;
+	@if($HeaderFontSize < 20px) { $res: #cba2a2;;}
+	@else{$res:green;}
+	@return $res;
+}
+
+@mixin form-style {
+	background-color: $FormBgColor;
+	border: $Border;
+	margin: $MarginContent;
+}
+%button-style{
+	border:$Border;
+	padding: 2px 5px;
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	background-color: $BgColor;
+	color:ParagraphStyle();
+	border-radius: 5px;
+}
+
+div{
+	display: inline-block;
+	border:$Border;
+}
+//
+//РАЗМЕТКА ВСЕЙ СТРАНИЦЫ-----------------------------------
+h2{
+	text-align: center;
+}
+header{
+	grid-area: header;
+}
+main{
+	grid-area: main;
+}
+nav{
+	grid-area: nav;
+}
+footer{
+	grid-area: footer;
+}
+.main__grid{
+	border: none;
+	display: grid;
+	width: 100%;
+	height: 100vh;
+	grid-template-areas: "header header"
+	"main nav"
+	"footer footer";
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 1fr 4fr 1fr;
+}
+//----------------------------------------------------------
+//
+header{
+	margin:$MarginContent;
+	border:$Border;
+	display: flex;
+	align-items: center;
+	background-color:$HeaderBgColor ;
+	
+	.logo{
+		background-image: url("../img/logo.png");
+		background-size: cover;
+		width: 70px;
+		height: 70px;
+		margin:5px 10px;
+	}
+		.page{
+		position:relative;
+		left:620px;
+		margin:$MarginContent;
+		padding: 3px 0;
+		width: 100px;
+		text-align: center;
+	}
+}
+
+main{
+	margin:$MarginContent;
+	padding: 5px 0;
+	border:$Border;
+						.header{
+							display: block;
+							margin:$MarginContent;
+							width: 97%;
+						}
+						.text__box{
+							margin:$MarginContent;
+							display: inline-block;
+							width: 29.9%;
+							height: 100px;
+							font-size: HeadFS($HeaderFontSize);
+						}
+						.images{
+							border: none;
+							display: flex;
+							justify-content: space-around;
+							grid-template-rows:200px;
+						}
+						.image1{
+						background-image: url("../img/logo.png");
+						background-size: cover;
+						width: $ImageWidth;
+						height: $ImageHeight;
+						}
+						.image2{
+						background-image: url("../img/logo.png");
+						background-size: cover;
+						width: $ImageWidth;
+						height: $ImageHeight;
+						}
+						.image3{
+						background-image: url("../img/logo.png");
+						background-size: cover;
+						width: $ImageWidth;
+						height: $ImageHeight;
+						}
+						.image4{
+						background-image: url("../img/logo.png");
+						background-size: cover;
+						width: $ImageWidth;
+						height: $ImageHeight;
+						}
+}
+
+nav{
+	border:$Border;
+	margin:$MarginContent;
+	display: grid;
+	grid-template-rows: 10fr 2fr 10fr;
+						.submit__form{
+							margin: $MarginContent;
+							input[type="text"],
+							input[type="password"]{
+								@include form-style;
+							}
+							input[type="submit"]{
+								@extend %button-style;
+							}
+						}
+						.nav__form{
+							margin:	$MarginContent;
+						}
+						.nav__header{
+							margin:	$MarginContent;
+						}
+						.nav__info{
+							display: grid;
+							margin:	$MarginContent;
+							grid-template-areas: "nav__image1 nav__text1"
+																	 "nav__image2 nav__text2";
+							grid-template-columns: 1fr 2fr;
+							grid-template-rows: 1fr 1fr;
+												.img1{
+												grid-area: "nav__image1";
+												background-image: url("../img/logo.png");	
+												background-size: cover;	
+												width: $SmallImageWidth;
+												height: $SmallImageHeight;
+												margin:$MarginContent;
+											}
+											.text1{
+												grid-area: "nav__text1";
+												height: $SmallImageHeight;
+												margin:$MarginContent;
+											}
+											.img2{
+												grid-area: "nav__image2";
+												background-image: url("../img/logo.png");
+												background-size: cover;	
+												width: $SmallImageWidth;
+												height: $SmallImageHeight;
+												margin:$MarginContent;
+											}
+											.text2{
+												height: $SmallImageHeight;
+												grid-area: "nav__text2";
+												margin:$MarginContent;
+											}
+}
+}
+
+footer{
+	background-color: $BgColor;
+	margin: $MarginContent;
+	border: $Border;
+}
+
+
+
+	

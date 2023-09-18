@@ -1,0 +1,22 @@
+<?xmlversion version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/labs_count_2.xsl"?>
+<CONTENT>
+    <STUDENT>
+        <NAME>Мироонов Данила</NAME>
+        <TRPO>7</TRPO>
+        <OAIP>7</OAIP>
+        <KYARD>7</KYARD>
+    </STUDENT>
+     <STUDENT>
+        <NAME>Авласенко Георгий</NAME>
+        <TRPO>7</TRPO>
+        <OAIP>8</OAIP>
+        <KYARD>4</KYARD>
+    </STUDENT>
+     <STUDENT>
+        <NAME>Леонович Максим</NAME>
+        <TRPO>3</TRPO>
+        <OAIP>3</OAIP>
+        <KYARD>9</KYARD>
+    </STUDENT>
+</CONTENT>

@@ -1,0 +1,33 @@
+labs{
+	display: table;
+	border-spacing: 0;
+	margin:auto;
+}
+
+nname,
+nsurname,
+nCML,
+nBAaP,
+nSDT,
+nSPL{
+	display: table-cell;
+	border: 1px double black;
+	text-align: center;
+	padding: 5px;
+	background-color: antiquewhite;
+}	
+student,head{
+	display: table-row;
+}
+
+name,
+surname,
+CML,
+BAaP,
+SDT,
+SPL{
+	display: table-cell;
+	border:1px solid black;
+	padding: 5px;
+}
+	

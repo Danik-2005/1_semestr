@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/labs.css" ?>
+<labs>
+	<head>
+		<nname>Имя</nname>
+		<nsurname>Фамилия</nsurname>
+		<nCML>КЯР</nCML>
+		<nBAaP>ОАиП</nBAaP>
+		<nSDT>ТРПО</nSDT>
+		<nSPL>СЯП</nSPL>
+	</head>	
+	<student>
+		<name>Danila</name>
+		<surname>Mironov</surname>
+		<CML>11</CML>
+		<BAaP>16</BAaP>
+		<SDT>10</SDT>
+		<SPL>8</SPL>
+	</student>
+	<student>
+		<name>George</name>
+		<surname>Avlasenko</surname>
+		<CML>11</CML>
+		<BAaP>17</BAaP>
+		<SDT>11</SDT>
+		<SPL>8</SPL>
+	</student>
+	<student>
+		<name>Dmitri</name>
+		<surname>Seleh</surname>
+		<CML>10</CML>
+		<BAaP>17</BAaP>
+		<SDT>10</SDT>
+		<SPL>6</SPL>
+	</student>
+	<student>
+		<name>Maxim</name>
+		<surname>Leonovich</surname>
+		<CML>13</CML>
+		<BAaP>17</BAaP>
+		<SDT>11</SDT>
+		<SPL>11</SPL>
+	</student>
+</labs>
